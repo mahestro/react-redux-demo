@@ -5,14 +5,14 @@ class App extends Component {
     return (
       <div className="container-fluid">
         <p>Header here...</p>
-        { this.props.children }
+        {this.props.children}
       </div>
     );
   }
 }
 
 App.propTypes = {
-  children: PropTypes.object.isRequired;
+  children: PropTypes.object.isRequired
 };
 
 export default App;

@@ -4,9 +4,9 @@ import App from './components/App';
 import HomePage from './components/home/HomePage';
 import AboutPage from './components/about/AboutPage';
 
-export default {
-  <Route path="/" component={ App }>
-    <IndexRoute comonent={ HomePage } />
-    <Route path="about" comonent={ AboutPage } />
+export default (
+  <Route path="/" component={App}>
+    <IndexRoute comonent={HomePage} />
+    <Route path="about" comonent={AboutPage} />
   </Route>
-};
+);
