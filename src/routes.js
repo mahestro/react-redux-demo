@@ -6,7 +6,7 @@ import AboutPage from './components/about/AboutPage';
 
 export default (
   <Route path="/" component={App}>
-    <IndexRoute comonent={HomePage} />
-    <Route path="about" comonent={AboutPage} />
+    <IndexRoute component={HomePage} />
+    <Route path="about" component={AboutPage} />
   </Route>
 );
