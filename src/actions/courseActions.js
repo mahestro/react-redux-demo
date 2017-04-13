@@ -1,10 +1,10 @@
 import * as types from './actionTypes';
 import courseApi from '../api/mockCourseApi';
 
-export function loadCoursesSuccess(course) {
+export function loadCoursesSuccess(courses) {
   return {
     type: types.LOAD_COURSES_SUCCESS,
-    course
+    courses
   };
 }
 
