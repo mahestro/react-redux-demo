@@ -14,6 +14,7 @@ class ManageCoursePage extends Component {
     };
 
     this.updateCourseState = this.updateCourseState.bind(this);
+    this.saveCourse = this.saveCourse.bind(this);
   }
 
   updateCourseState(event) {
@@ -21,7 +22,11 @@ class ManageCoursePage extends Component {
     let course = this.state.course;
     course[field] = event.target.value;
     return this.setState({course: course});
-  };
+  }
+
+  saveCourse() {
+
+  }
 
   render() {
     return (
@@ -29,7 +34,8 @@ class ManageCoursePage extends Component {
         allAuthors={this.props.authors}
         course={this.state.course}
         errors={this.state.errors}
-        onChange={this.updateCourseState} />
+        onChange={this.updateCourseState}
+        onSave={this.saveCourse} />
     );
   }
 }
