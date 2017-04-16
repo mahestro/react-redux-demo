@@ -24,8 +24,9 @@ class ManageCoursePage extends Component {
     return this.setState({course: course});
   }
 
-  saveCourse() {
-
+  saveCourse(event) {
+    event.preventDefault();
+    this.props.actions.saveCourse(this.state.course);
   }
 
   render() {
@@ -42,7 +43,8 @@ class ManageCoursePage extends Component {
 
 ManageCoursePage.propTypes = {
   course: PropTypes.object.isRequired,
-  authors: PropTypes.array.isRequired
+  authors: PropTypes.array.isRequired,
+  actions: PropTypes.object.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
