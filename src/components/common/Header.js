@@ -10,9 +10,7 @@ const Header = () => {
         <Link to="/courses" activeClassName="active">Courses</Link>
         {" | "}
         <Link to="/about" activeClassName="active">About</Link>
-        <LoadingDots
-          interval={100}
-          dots={20} />
+        <LoadingDots interval={100} dots={20} />
     </nav>
   );
 };
