@@ -3,13 +3,6 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import { ManageCoursePage } from './ManageCoursePage';
 
-function setup() {
-  const props = {
-  };
-
-  return shallow(<ManageCoursePage {...props} />);
-}
-
 describe('Manage Course Page', () => {
   it('sets error message when trying to save empty file', () => {
     const props = {
