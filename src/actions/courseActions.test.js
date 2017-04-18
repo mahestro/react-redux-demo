@@ -37,6 +37,8 @@ describe('Async Actions', () => {
   });
 
   it('should create BEGIN_AJAX_CALL and LOAD_COURSES_SUCCESS when loading courses', done => {
+    // nock here when no mockup api
+
     const expectedActions = [
       { type: types.BEGIN_AJAX_CALL },
       { type: types.LOAD_COURSES_SUCCESS, body: { courses: [ {id: 'clean-code', title: 'Clean Code'} ] } }
